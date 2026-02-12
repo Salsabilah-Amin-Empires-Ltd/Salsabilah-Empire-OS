@@ -1,2 +1,3 @@
 # Salsabilah-Empires-OS
-SaaS POS; Inventory Management System for Salsabilah Amin Empires, powered by MD. AL AMIN SOHAG 
+SaaS POS; Inventory Management System for Salsabilah Amin Empires,
+Powered by MD. AL AMIN SOHAG 
