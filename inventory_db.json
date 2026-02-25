@@ -1,0 +1,16 @@
+[
+    {
+        "name": "Smart LED TV",
+        "sku": "SEL-TV-001",
+        "stock": 25,
+        "price": 35000,
+        "warranty": "2 Years"
+    },
+    {
+        "name": "Gaming Laptop",
+        "sku": "SEL-LP-052",
+        "stock": 10,
+        "price": 85000,
+        "warranty": "1 Year"
+    }
+]
