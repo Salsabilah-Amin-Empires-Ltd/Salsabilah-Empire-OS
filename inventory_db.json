@@ -1,16 +1,23 @@
 [
-    {
-        "name": "Smart LED TV",
-        "sku": "SEL-TV-001",
-        "stock": 25,
-        "price": 35000,
-        "warranty": "2 Years"
-    },
-    {
-        "name": "Gaming Laptop",
-        "sku": "SEL-LP-052",
-        "stock": 10,
-        "price": 85000,
-        "warranty": "1 Year"
-    }
+  {
+    "brand": "MyOne",
+    "name": "MyOne 32 Inch LED TV",
+    "sku": "MY-TV-32",
+    "price": 18500,
+    "stock": 20
+  },
+  {
+    "brand": "Minister",
+    "name": "Minister M-165 Refrigerator",
+    "sku": "MIN-REF-165",
+    "price": 28500,
+    "stock": 12
+  },
+  {
+    "brand": "LG (Butterfly)",
+    "name": "LG 1.5 Ton Dual Inverter AC",
+    "sku": "LG-AC-18",
+    "price": 78500,
+    "stock": 8
+  }
 ]
