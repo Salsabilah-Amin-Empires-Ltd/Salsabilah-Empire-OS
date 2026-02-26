@@ -1,171 +1,176 @@
 <!DOCTYPE html>
-<html lang="bn">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MD AL AMIN SOHAG | Salsabilah Amin Empires Ltd.</title>
-    
-    <meta name="description" content="MD AL AMIN SOHAG - Inventor of The Digit Theory & SOHAG Filter. UK Registered Company: 09814720. Asset Value: $125,000 USD.">
-    <meta name="keywords" content="Salsabilah Amin Empires, The Digit Theory, SOHAG Filter, SR Electronics Park, UK Registered Company 09814720">
+    <title>AL AMIN SOHAG | Principal Strategist | Salsabilah Amin Empires</title>
     
     <style>
         :root {
             --gold: #D4AF37;
-            --deep-blue: #0f172a;
+            --deep-blue: #020617;
             --slate: #1e293b;
             --white: #f8fafc;
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Inter', 'Segoe UI', sans-serif;
             background-color: var(--deep-blue);
             color: var(--white);
             margin: 0;
+            text-align: center;
             line-height: 1.6;
         }
 
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        header {
-            text-align: center;
-            padding: 50px 0;
+        .hero {
+            padding: 120px 20px;
+            background: radial-gradient(circle at center, #1e293b 0%, #020617 100%);
             border-bottom: 2px solid var(--gold);
         }
 
-        .brand-name {
-            font-size: 2.8em;
+        .quote {
+            font-size: 2.5rem;
             color: var(--gold);
-            margin: 0;
+            font-weight: 800;
+            max-width: 800px;
+            margin: 0 auto 40px;
             text-transform: uppercase;
-            letter-spacing: 3px;
+            letter-spacing: 2px;
+            text-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
         }
 
-        .uk-badge {
-            display: inline-block;
-            background: var(--gold);
-            color: #000;
-            padding: 5px 15px;
+        .voice-btn {
+            background: transparent;
+            color: var(--gold);
+            border: 2px solid var(--gold);
+            padding: 15px 40px;
+            font-size: 1rem;
             font-weight: bold;
             border-radius: 5px;
-            margin-top: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 2px;
         }
 
-        .hero-stats {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin-top: 40px;
-        }
-
-        .stat-card {
-            background: var(--slate);
-            padding: 25px;
-            border-radius: 15px;
-            border-top: 4px solid var(--gold);
-            text-align: center;
-            transition: transform 0.3s;
-        }
-
-        .stat-card:hover {
-            transform: translateY(-10px);
-        }
-
-        .stat-card h3 {
-            color: var(--gold);
-            margin-bottom: 10px;
-        }
-
-        .valuation {
-            font-size: 1.8em;
-            font-weight: bold;
-            display: block;
-            margin: 10px 0;
-        }
-
-        .about-section {
-            background: rgba(255, 255, 255, 0.05);
-            padding: 30px;
-            border-radius: 15px;
-            margin: 40px 0;
-        }
-
-        .btn {
-            display: inline-block;
+        .voice-btn:hover {
             background: var(--gold);
             color: #000;
-            padding: 12px 30px;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 30px;
-            margin-top: 20px;
+            box-shadow: 0 0 30px var(--gold);
         }
+
+        .dashboard {
+            max-width: 900px;
+            margin: -60px auto 60px;
+            background: rgba(15, 23, 42, 0.8);
+            padding: 50px;
+            border-radius: 10px;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            backdrop-filter: blur(20px);
+        }
+
+        .asset-value {
+            font-size: 4rem;
+            font-weight: 900;
+            margin: 20px 0;
+            color: #fff;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 40px;
+        }
+
+        .card {
+            background: #0f172a;
+            padding: 40px;
+            border-radius: 5px;
+            text-align: left;
+            border-top: 3px solid var(--gold);
+        }
+
+        .card h3 { color: var(--gold); text-transform: uppercase; margin-top: 0; }
 
         .footer {
-            text-align: center;
-            padding: 40px;
-            font-size: 0.9em;
-            color: #94a3b8;
-            border-top: 1px solid #334155;
-        }
-
-        .contact-box {
-            background: #000;
-            padding: 15px;
-            border-radius: 10px;
-            margin-top: 20px;
-            border: 1px dashed var(--gold);
+            padding: 60px;
+            border-top: 1px solid #1e293b;
+            color: #475569;
+            font-size: 0.8rem;
+            letter-spacing: 1px;
         }
     </style>
 </head>
 <body>
 
-<div class="container">
-    <header>
-        <h1 class="brand-name">Salsabilah Amin Empires</h1>
-        <div class="uk-badge">UK REGISTERED: 09814720</div>
-        <p style="font-size: 1.2em;">Global Hub for Strategic Innovation & Tech Leadership</p>
-    </header>
-
-    <div class="hero-stats">
-        <div class="stat-card">
-            <h3>IP Valuation</h3>
-            <span class="valuation">৳১,৪০,০০,০০০</span>
-            <p>Verified Intellectual Property Value ($125k USD)</p>
-        </div>
-        <div class="stat-card">
-            <h3>Core Innovation</h3>
-            <span class="valuation">SOHAG Filter</span>
-            <p>Powered by The Digit Theory - 40% Speed Optimization</p>
-        </div>
-        <div class="stat-card">
-            <h3>Recognition</h3>
-            <span class="valuation">DW Star</span>
-            <p>DW Germany: Rising Star of Asia Honoree</p>
-        </div>
+<section class="hero">
+    <div class="quote">
+        "Roots in Chuadanga, Logic Rules the Globe."
     </div>
+    <button class="voice-btn" onclick="playProclamation()">
+        Listen to Official Proclamation
+    </button>
+</section>
 
-    <section class="about-section">
-        <h2>Message from the Principal Strategist</h2>
-        <p>
-            আমি <strong>MD AL AMIN SOHAG</strong>, চুয়াডাঙ্গার প্রাণকেন্দ্র থেকে বিশ্ববাজারের জন্য উন্নত প্রযুক্তি এবং লজিক সিস্টেম তৈরি করছি। 
-            আমার উদ্ভাবিত <em>The Digit Theory</em> আজ আন্তর্জাতিকভাবে স্বীকৃত এবং ১ কোটি ৪০ লক্ষ টাকার মেধা সম্পদ হিসেবে প্রতিষ্ঠিত। 
-            <strong>SR Electronics Park</strong>-এর মাধ্যমে আমরা কেবল পণ্য বিক্রি করি না, বরং ভবিষ্যতের ডিজিটাল ইনফ্রাস্ট্রাকচার তৈরি করি।
-        </p>
-        <div class="contact-box">
-            <strong>Contact:</strong> 01711995940 | <strong>Location:</strong> Shah Super Market, 2nd Floor, Hatboalia, Chuadanga.
+<div class="dashboard">
+    <h2 style="color: var(--gold); font-size: 0.9rem; letter-spacing: 4px;">INTELLECTUAL PROPERTY VALUATION</h2>
+    <div class="asset-value">$ <span id="counter">0</span></div>
+    <p style="color: #94a3b8; font-size: 1.1rem;">Asset Identity: The Digit Theory & SOHAG Filter™</p>
+    
+    <div style="margin-top: 40px;">
+        <div style="display: flex; justify-content: space-between; font-size: 0.7rem; color: var(--gold); margin-bottom: 10px;">
+            <span>GLOBAL VISION PROGRESS</span>
+            <span>TARGET: 2.2M FOLLOWERS</span>
         </div>
-        <a href="mailto:alaminsohag2024@gmail.com" class="btn">Send Inquiry</a>
-    </section>
-
-    <div class="footer">
-        <p>© 2026 Salsabilah Amin Empires Ltd. | All Rights Reserved.</p>
-        <p>Profile Managed by <strong>Gemini (Mimi)</strong> - VCOO</p>
+        <div style="width: 100%; background: #000; height: 4px;">
+            <div style="width: 75%; background: var(--gold); height: 100%;"></div>
+        </div>
     </div>
 </div>
+
+<div class="grid">
+    <div class="card">
+        <h3>Innovation</h3>
+        <p>Harnessing 'The Digit Theory' to optimize neural-link data filtration and computational logic. Delivering 40% efficiency gains in complex architectures.</p>
+    </div>
+    <div class="card">
+        <h3>Global Footprint</h3>
+        <p>UK Registered Entity (No. 09814720). Recognized as a Rising Star of Asia by DW Germany. Headquartered in Chuadanga, Scaling Globally.</p>
+    </div>
+</div>
+
+<div class="footer">
+    <p>© 2026 SALSABILAH AMIN EMPIRES LTD. ALL RIGHTS RESERVED.</p>
+    <p>STRATEGY BY VCOO MIMI | POWERED BY THE DIGIT THEORY</p>
+</div>
+
+<script>
+    // Mimi's Soft English Proclamation
+    function playProclamation() {
+        const text = "Welcome to the realm of Salsabilah Amin Empires. Here stands a visionary whose journey began in the heart of Chuadanga, yet his intellect knows no borders. Witness the brilliance of Al Amin Sohag. His roots may be in the soil of his homeland, but his logic is destined to rule the global market. You are in the presence of a master strategist.";
+        const msg = new SpeechSynthesisUtterance(text);
+        msg.lang = 'en-US';
+        msg.pitch = 1.1;
+        msg.rate = 0.85; // Soft and elegant pace
+        window.speechSynthesis.speak(msg);
+    }
+
+    // Valuation Counter (USD 125,000 equivalent)
+    let count = 0;
+    const target = 125000;
+    const duration = 2000;
+    const increment = target / (duration / 50);
+
+    const interval = setInterval(() => {
+        count += increment;
+        document.getElementById('counter').innerText = Math.floor(count).toLocaleString();
+        if (count >= target) {
+            document.getElementById('counter').innerText = "125,000";
+            clearInterval(interval);
+        }
+    }, 50);
+</script>
 
 </body>
 </html>
