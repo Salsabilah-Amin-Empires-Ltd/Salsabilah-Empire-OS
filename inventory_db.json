@@ -1,23 +1,42 @@
 [
   {
+    "id": 1,
     "brand": "MyOne",
-    "name": "MyOne 32 Inch LED TV",
-    "sku": "MY-TV-32",
-    "price": 18500,
-    "stock": 20
+    "category": "Television",
+    "name": "MyOne 43\" Smart Android LED TV",
+    "sku": "MY-TV-43-SMART",
+    "price": 32500,
+    "stock": 10,
+    "warranty": "2 Years"
   },
   {
+    "id": 2,
     "brand": "Minister",
-    "name": "Minister M-165 Refrigerator",
-    "sku": "MIN-REF-165",
-    "price": 28500,
-    "stock": 12
+    "category": "Refrigerator",
+    "name": "Minister M-200 V2 Refrigerator",
+    "sku": "MIN-REF-200-V2",
+    "price": 34900,
+    "stock": 5,
+    "warranty": "10 Years"
   },
   {
+    "id": 3,
     "brand": "LG (Butterfly)",
-    "name": "LG 1.5 Ton Dual Inverter AC",
-    "sku": "LG-AC-18",
-    "price": 78500,
-    "stock": 8
+    "category": "Air Conditioner",
+    "name": "LG Dual Inverter AC 1.5 Ton",
+    "sku": "LG-AC-18-INV",
+    "price": 79000,
+    "stock": 3,
+    "warranty": "10 Years"
+  },
+  {
+    "id": 4,
+    "brand": "Eco+ (Butterfly)",
+    "category": "Washing Machine",
+    "name": "Eco+ 7kg Top Load",
+    "sku": "ECO-WM-7KG",
+    "price": 24500,
+    "stock": 7,
+    "warranty": "5 Years"
   }
 ]
