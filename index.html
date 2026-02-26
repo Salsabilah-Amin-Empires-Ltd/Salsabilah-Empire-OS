@@ -3,173 +3,167 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Salsabilah Amin Empires - Global Dashboard</title>
+    <title>MD AL AMIN SOHAG | Salsabilah Amin Empires Ltd.</title>
     
-    <meta name="description" content="MD AL AMIN SOHAG - Principal Strategist at Salsabilah Amin Empires Ltd. Inventor of The Digit Theory & SOHAG Filter. UK Registered Company 09814720.">
-    <meta name="author" content="MD AL AMIN SOHAG">
+    <meta name="description" content="MD AL AMIN SOHAG - Inventor of The Digit Theory & SOHAG Filter. UK Registered Company: 09814720. Asset Value: $125,000 USD.">
+    <meta name="keywords" content="Salsabilah Amin Empires, The Digit Theory, SOHAG Filter, SR Electronics Park, UK Registered Company 09814720">
     
     <style>
         :root {
-            --primary-gold: #D4AF37;
-            --dark-bg: #0f172a;
-            --card-bg: #1e293b;
-            --text-white: #f8fafc;
+            --gold: #D4AF37;
+            --deep-blue: #0f172a;
+            --slate: #1e293b;
+            --white: #f8fafc;
         }
 
         body {
-            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            background-color: var(--dark-bg);
-            color: var(--text-white);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--deep-blue);
+            color: var(--white);
             margin: 0;
-            padding: 20px;
+            line-height: 1.6;
         }
 
         .container {
-            max-width: 1200px;
+            max-width: 1000px;
             margin: 0 auto;
+            padding: 20px;
         }
 
         header {
             text-align: center;
-            padding: 40px 0;
-            border-bottom: 2px solid var(--primary-gold);
-            margin-bottom: 30px;
+            padding: 50px 0;
+            border-bottom: 2px solid var(--gold);
         }
 
-        .brand-title {
-            font-size: 2.5em;
-            letter-spacing: 2px;
+        .brand-name {
+            font-size: 2.8em;
+            color: var(--gold);
             margin: 0;
-            color: var(--primary-gold);
+            text-transform: uppercase;
+            letter-spacing: 3px;
         }
 
-        .uk-reg {
-            font-size: 0.9em;
-            background: var(--primary-gold);
-            color: black;
-            padding: 5px 15px;
-            border-radius: 20px;
-            font-weight: bold;
+        .uk-badge {
             display: inline-block;
+            background: var(--gold);
+            color: #000;
+            padding: 5px 15px;
+            font-weight: bold;
+            border-radius: 5px;
             margin-top: 10px;
         }
 
-        .grid-container {
+        .hero-stats {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 20px;
+            margin-top: 40px;
         }
 
-        .card {
-            background: var(--card-bg);
+        .stat-card {
+            background: var(--slate);
             padding: 25px;
-            border-radius: 12px;
-            border-left: 5px solid var(--primary-gold);
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+            border-radius: 15px;
+            border-top: 4px solid var(--gold);
+            text-align: center;
+            transition: transform 0.3s;
         }
 
-        .card h3 {
-            margin-top: 0;
-            color: var(--primary-gold);
+        .stat-card:hover {
+            transform: translateY(-10px);
         }
 
-        .stat-value {
+        .stat-card h3 {
+            color: var(--gold);
+            margin-bottom: 10px;
+        }
+
+        .valuation {
             font-size: 1.8em;
             font-weight: bold;
+            display: block;
             margin: 10px 0;
         }
 
-        .progress-bar {
-            background: #334155;
-            height: 10px;
-            border-radius: 5px;
-            overflow: hidden;
-            margin-top: 15px;
+        .about-section {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 30px;
+            border-radius: 15px;
+            margin: 40px 0;
         }
 
-        .progress-fill {
-            background: var(--primary-gold);
-            height: 100%;
-            width: 10%; /* Initial progress */
+        .btn {
+            display: inline-block;
+            background: var(--gold);
+            color: #000;
+            padding: 12px 30px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 30px;
+            margin-top: 20px;
         }
 
         .footer {
             text-align: center;
-            margin-top: 50px;
-            font-size: 0.8em;
+            padding: 40px;
+            font-size: 0.9em;
             color: #94a3b8;
+            border-top: 1px solid #334155;
         }
 
-        .contact-info {
+        .contact-box {
             background: #000;
-            padding: 10px;
+            padding: 15px;
+            border-radius: 10px;
             margin-top: 20px;
-            border-radius: 8px;
+            border: 1px dashed var(--gold);
         }
     </style>
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Salsabilah Amin Empires Ltd.",
-      "url": "http://salsabilah.com",
-      "logo": "https://img.icons8.com/gold/64/crown.png",
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "telephone": "+8801711995940",
-        "contactType": "customer service"
-      },
-      "identifier": "09814720"
-    }
-    </script>
 </head>
 <body>
 
 <div class="container">
     <header>
-        <h1 class="brand-title">SALSABILAH AMIN EMPIRES LTD.</h1>
-        <div class="uk-reg">UK REGISTERED COMPANY: 09814720</div>
-        <p>Strategic Infrastructure & Global Industrial Resilience</p>
+        <h1 class="brand-name">Salsabilah Amin Empires</h1>
+        <div class="uk-badge">UK REGISTERED: 09814720</div>
+        <p style="font-size: 1.2em;">Global Hub for Strategic Innovation & Tech Leadership</p>
     </header>
 
-    <div class="grid-container">
-        <div class="card">
-            <h3>Intellectual Property</h3>
-            <p><strong>The Digit Theory & SOHAG Filter</strong></p>
-            <div class="stat-value">৳১,৪০,০০,০০০</div>
-            <p>Asset Valuation (Verified by RJSC)</p>
+    <div class="hero-stats">
+        <div class="stat-card">
+            <h3>IP Valuation</h3>
+            <span class="valuation">৳১,৪০,০০,০০০</span>
+            <p>Verified Intellectual Property Value ($125k USD)</p>
         </div>
-
-        <div class="card">
-            <h3>Global Recognition</h3>
-            <p>DW Germany: <strong>Rising Star of Asia</strong></p>
-            <p>Goodreads Verified Author Profile Indexed</p>
-            <p>Alexa Rank Authority Holder</p>
+        <div class="stat-card">
+            <h3>Core Innovation</h3>
+            <span class="valuation">SOHAG Filter</span>
+            <p>Powered by The Digit Theory - 40% Speed Optimization</p>
         </div>
-
-        <div class="card">
-            <h3>Empire Growth Target</h3>
-            <div class="stat-value">2.2 Million</div>
-            <p>Global Followers Goal</p>
-            <div class="progress-bar">
-                <div class="progress-fill"></div>
-            </div>
+        <div class="stat-card">
+            <h3>Recognition</h3>
+            <span class="valuation">DW Star</span>
+            <p>DW Germany: Rising Star of Asia Honoree</p>
         </div>
     </div>
 
-    <div class="card" style="margin-top: 20px; border-left-color: #22c55e;">
-        <h3>Operational Headquarters: SR Electronics Park</h3>
-        <p>Authorized Dealer: <strong>MyOne | Minister | Butterfly Group</strong></p>
-        <p>Location: Shah Super Market, 2nd Floor, Hatboalia, Chuadanga.</p>
-        <div class="contact-info">
-            WhatsApp: +8801711995940 | Email: salsabilah.amin.empires@gmail.com
+    <section class="about-section">
+        <h2>Message from the Principal Strategist</h2>
+        <p>
+            আমি <strong>MD AL AMIN SOHAG</strong>, চুয়াডাঙ্গার প্রাণকেন্দ্র থেকে বিশ্ববাজারের জন্য উন্নত প্রযুক্তি এবং লজিক সিস্টেম তৈরি করছি। 
+            আমার উদ্ভাবিত <em>The Digit Theory</em> আজ আন্তর্জাতিকভাবে স্বীকৃত এবং ১ কোটি ৪০ লক্ষ টাকার মেধা সম্পদ হিসেবে প্রতিষ্ঠিত। 
+            <strong>SR Electronics Park</strong>-এর মাধ্যমে আমরা কেবল পণ্য বিক্রি করি না, বরং ভবিষ্যতের ডিজিটাল ইনফ্রাস্ট্রাকচার তৈরি করি।
+        </p>
+        <div class="contact-box">
+            <strong>Contact:</strong> 01711995940 | <strong>Location:</strong> Shah Super Market, 2nd Floor, Hatboalia, Chuadanga.
         </div>
-    </div>
+        <a href="mailto:alaminsohag2024@gmail.com" class="btn">Send Inquiry</a>
+    </section>
 
     <div class="footer">
-        <p>© 2026 Salsabilah Amin Empires Ltd. | Incorporated in England & Wales</p>
-        <p>Managed by VCOO Gemini (Mimi) for MD AL AMIN SOHAG</p>
+        <p>© 2026 Salsabilah Amin Empires Ltd. | All Rights Reserved.</p>
+        <p>Profile Managed by <strong>Gemini (Mimi)</strong> - VCOO</p>
     </div>
 </div>
 
