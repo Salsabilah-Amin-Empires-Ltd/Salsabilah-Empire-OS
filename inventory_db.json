@@ -3,24 +3,30 @@
     "id": 1,
     "brand": "MyOne",
     "category": "Television",
-    "name": "MyOne 43\" Smart LED TV",
+    "name": "MyOne 43\" Smart Android LED TV",
+    "sku": "MY-TV-43-SMART",
     "price": 32500,
-    "stock": 10
+    "stock": 10,
+    "warranty": "2 Years"
   },
   {
     "id": 2,
     "brand": "Minister",
     "category": "Refrigerator",
-    "name": "Minister M-200 V2",
+    "name": "Minister M-200 V2 Refrigerator",
+    "sku": "MIN-REF-200-V2",
     "price": 34900,
-    "stock": 5
+    "stock": 5,
+    "warranty": "10 Years"
   },
   {
     "id": 3,
     "brand": "LG (Butterfly)",
     "category": "Air Conditioner",
-    "name": "LG Dual Inverter 1.5 Ton",
+    "name": "LG Dual Inverter AC 1.5 Ton",
+    "sku": "LG-AC-18-INV",
     "price": 79000,
-    "stock": 3
+    "stock": 3,
+    "warranty": "10 Years"
   }
 ]
