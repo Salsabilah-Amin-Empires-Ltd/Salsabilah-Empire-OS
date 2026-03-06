@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AL AMIN SOHAG | Principal Strategist | Salsabilah Amin Empires</title>
+    <title>AL AMIN SOHAG | Salsabilah Amin Empires</title>
     
     <style>
         :root {
@@ -11,6 +11,7 @@
             --deep-blue: #020617;
             --slate: #1e293b;
             --white: #f8fafc;
+            --green: #34A853;
         }
 
         body {
@@ -23,153 +24,177 @@
         }
 
         .hero {
-            padding: 120px 20px;
+            padding: 80px 20px;
             background: radial-gradient(circle at center, #1e293b 0%, #020617 100%);
             border-bottom: 2px solid var(--gold);
         }
 
         .quote {
-            font-size: 2.5rem;
+            font-size: 2.2rem;
             color: var(--gold);
             font-weight: 800;
             max-width: 800px;
-            margin: 0 auto 40px;
+            margin: 0 auto 30px;
             text-transform: uppercase;
             letter-spacing: 2px;
             text-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
         }
 
-        .voice-btn {
-            background: transparent;
-            color: var(--gold);
-            border: 2px solid var(--gold);
-            padding: 15px 40px;
-            font-size: 1rem;
-            font-weight: bold;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-        }
-
-        .voice-btn:hover {
-            background: var(--gold);
-            color: #000;
-            box-shadow: 0 0 30px var(--gold);
-        }
-
         .dashboard {
             max-width: 900px;
-            margin: -60px auto 60px;
-            background: rgba(15, 23, 42, 0.8);
-            padding: 50px;
-            border-radius: 10px;
-            border: 1px solid rgba(212, 175, 55, 0.3);
+            margin: -40px auto 40px;
+            background: rgba(15, 23, 42, 0.9);
+            padding: 40px;
+            border-radius: 15px;
+            border: 1px solid var(--gold);
             backdrop-filter: blur(20px);
+            box-shadow: 0 10px 50px rgba(0,0,0,0.5);
         }
 
         .asset-value {
-            font-size: 4rem;
+            font-size: 3.5rem;
             font-weight: 900;
-            margin: 20px 0;
+            margin: 10px 0;
             color: #fff;
+        }
+
+        /* Software Logic Section */
+        .software-box {
+            background: #000;
+            padding: 25px;
+            border-radius: 10px;
+            border: 1px dashed var(--gold);
+            margin-top: 30px;
+        }
+
+        input {
+            padding: 12px;
+            border-radius: 5px;
+            border: 1px solid var(--gold);
+            background: #111;
+            color: var(--gold);
+            width: 60%;
+            font-size: 1rem;
+            margin-bottom: 10px;
+        }
+
+        .action-btn {
+            background: var(--gold);
+            color: #000;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: 0.3s;
+        }
+
+        .action-btn:hover {
+            box-shadow: 0 0 20px var(--gold);
+            transform: scale(1.05);
         }
 
         .grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            padding: 40px;
+            gap: 20px;
+            padding: 20px;
         }
 
         .card {
             background: #0f172a;
-            padding: 40px;
+            padding: 25px;
             border-radius: 5px;
             text-align: left;
-            border-top: 3px solid var(--gold);
+            border-left: 4px solid var(--gold);
         }
 
-        .card h3 { color: var(--gold); text-transform: uppercase; margin-top: 0; }
+        .card h3 { color: var(--gold); margin-top: 0; font-size: 1rem; }
 
         .footer {
-            padding: 60px;
+            padding: 40px;
             border-top: 1px solid #1e293b;
             color: #475569;
             font-size: 0.8rem;
-            letter-spacing: 1px;
         }
     </style>
 </head>
 <body>
 
 <section class="hero">
-    <div class="quote">
-        "Roots in Chuadanga, Logic Rules the Globe."
-    </div>
-    <button class="voice-btn" onclick="playProclamation()">
-        Listen to Official Proclamation
+    <div class="quote">"Logic Rules the Globe."</div>
+    <button class="action-btn" onclick="playProclamation()" style="background: transparent; color: var(--gold); border: 2px solid var(--gold);">
+        🔊 Listen to Official Proclamation
     </button>
 </section>
 
 <div class="dashboard">
-    <h2 style="color: var(--gold); font-size: 0.9rem; letter-spacing: 4px;">INTELLECTUAL PROPERTY VALUATION</h2>
+    <h2 style="color: var(--gold); font-size: 0.8rem; letter-spacing: 3px;">SYSTEM ASSET VALUATION</h2>
     <div class="asset-value">$ <span id="counter">0</span></div>
-    <p style="color: #94a3b8; font-size: 1.1rem;">Asset Identity: The Digit Theory & SOHAG Filter™</p>
     
-    <div style="margin-top: 40px;">
-        <div style="display: flex; justify-content: space-between; font-size: 0.7rem; color: var(--gold); margin-bottom: 10px;">
-            <span>GLOBAL VISION PROGRESS</span>
-            <span>TARGET: 2.2M FOLLOWERS</span>
-        </div>
-        <div style="width: 100%; background: #000; height: 4px;">
-            <div style="width: 75%; background: var(--gold); height: 100%;"></div>
-        </div>
+    <p style="color: #94a3b8; font-size: 1.1rem; font-weight: bold;">
+        Asset Identity: Dedicated to Natasha & Salsabilah
+    </p>
+
+    <div class="software-box">
+        <h3 style="color: var(--green); margin-top:0;">THE DIGIT THEORY ENGINE v3.0</h3>
+        <p style="font-size: 0.9rem; color: #ccc;">Input Value for Justice & Fairness Calculation:</p>
+        <input type="number" id="theoryInput" placeholder="Enter number...">
+        <br>
+        <button class="action-btn" onclick="runTheory()">Execute Logic</button>
+        <div id="resultDisplay" style="margin-top: 15px; font-size: 1.2rem; color: var(--gold); font-weight: bold;"></div>
     </div>
 </div>
 
 <div class="grid">
     <div class="card">
-        <h3>Innovation</h3>
-        <p>Harnessing 'The Digit Theory' to optimize neural-link data filtration and computational logic. Delivering 40% efficiency gains in complex architectures.</p>
+        <h3>Innovation: GDE-BD-779</h3>
+        <p style="font-size: 0.9rem;">Verified Google Developer Expert. Utilizing 'The Digit Theory' to redefine computational logic and fair data filtration.</p>
     </div>
     <div class="card">
-        <h3>Global Footprint</h3>
-        <p>UK Registered Entity (No. 09814720). Recognized as a Rising Star of Asia by DW Germany. Headquartered in Chuadanga, Scaling Globally.</p>
+        <h3>Legal Entity</h3>
+        <p style="font-size: 0.9rem;">SALSABILAH AMIN EMPIRES LTD (UK No. 09814720). Strategic global scaling from Chuadanga to London.</p>
     </div>
 </div>
 
 <div class="footer">
-    <p>© 2026 SALSABILAH AMIN EMPIRES LTD. ALL RIGHTS RESERVED.</p>
-    <p>STRATEGY BY VCOO MIMI | POWERED BY THE DIGIT THEORY</p>
+    <p>© 2026 SALSABILAH AMIN EMPIRES LTD. | POWERED BY MD. AL AMIN SOHAG</p>
 </div>
 
 <script>
-    // Mimi's Soft English Proclamation
+    // 1. Voice Proclamation
     function playProclamation() {
-        const text = "Welcome to the realm of Salsabilah Amin Empires. Here stands a visionary whose journey began in the heart of Chuadanga, yet his intellect knows no borders. Witness the brilliance of Al Amin Sohag. His roots may be in the soil of his homeland, but his logic is destined to rule the global market. You are in the presence of a master strategist.";
+        const text = "Welcome to the realm of Salsabilah Amin Empires. Witness the brilliance of Al Amin Sohag. This empire is dedicated to Natasha and Salsabilah. His roots are in Chuadanga, but his logic rules the global market.";
         const msg = new SpeechSynthesisUtterance(text);
         msg.lang = 'en-US';
-        msg.pitch = 1.1;
-        msg.rate = 0.85; // Soft and elegant pace
+        msg.rate = 0.9;
         window.speechSynthesis.speak(msg);
     }
 
-    // Valuation Counter (USD 125,000 equivalent)
+    // 2. The Digit Theory Software Logic
+    function runTheory() {
+        let input = document.getElementById('theoryInput').value;
+        if(input) {
+            // Your Logic: Justice & Fairness (Doubling the value)
+            let result = input * 2;
+            document.getElementById('resultDisplay').innerHTML = "Theory Result: " + result.toLocaleString() + " <br><span style='font-size:0.8rem; color: #34A853;'>[Justice & Fairness Applied]</span>";
+        } else {
+            alert("Sir, please enter a numeric value for the Theory.");
+        }
+    }
+
+    // 3. Valuation Counter
     let count = 0;
     const target = 125000;
-    const duration = 2000;
-    const increment = target / (duration / 50);
-
     const interval = setInterval(() => {
-        count += increment;
+        count += 2500;
         document.getElementById('counter').innerText = Math.floor(count).toLocaleString();
         if (count >= target) {
             document.getElementById('counter').innerText = "125,000";
             clearInterval(interval);
         }
-    }, 50);
+    }, 40);
 </script>
 
 </body>
