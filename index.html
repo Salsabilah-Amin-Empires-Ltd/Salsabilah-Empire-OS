@@ -1,200 +1,118 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bn">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AL AMIN SOHAG | Salsabilah Amin Empires</title>
-    
+    <title>Salsabilah Amin Empires | Online Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        :root {
-            --gold: #D4AF37;
-            --deep-blue: #020617;
-            --slate: #1e293b;
-            --white: #f8fafc;
-            --green: #34A853;
-        }
+        :root { --gold: #D4AF37; --dark: #0f172a; --green: #22c55e; }
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #f1f5f9; color: #333; }
+        header { background: var(--dark); color: white; padding: 15px; text-align: center; border-bottom: 3px solid var(--gold); position: sticky; top:0; z-index: 100; }
+        .container { max-width: 1000px; margin: 20px auto; padding: 10px; display: grid; grid-template-columns: 2fr 1fr; gap: 20px; }
+        
+        /* Product Card */
+        .product-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
+        .card { background: white; padding: 15px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); text-align: center; border-bottom: 3px solid transparent; }
+        .card:hover { border-bottom: 3px solid var(--gold); }
+        .card img { width: 80px; height: 80px; object-fit: cover; }
+        .card h3 { font-size: 1rem; margin: 10px 0; }
+        .price { color: var(--green); font-weight: bold; font-size: 1.2rem; }
+        .add-btn { background: var(--gold); border: none; padding: 8px 15px; border-radius: 5px; cursor: pointer; font-weight: bold; margin-top: 10px; }
 
-        body {
-            font-family: 'Inter', 'Segoe UI', sans-serif;
-            background-color: var(--deep-blue);
-            color: var(--white);
-            margin: 0;
-            text-align: center;
-            line-height: 1.6;
-        }
-
-        .hero {
-            padding: 80px 20px;
-            background: radial-gradient(circle at center, #1e293b 0%, #020617 100%);
-            border-bottom: 2px solid var(--gold);
-        }
-
-        .quote {
-            font-size: 2.2rem;
-            color: var(--gold);
-            font-weight: 800;
-            max-width: 800px;
-            margin: 0 auto 30px;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            text-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
-        }
-
-        .dashboard {
-            max-width: 900px;
-            margin: -40px auto 40px;
-            background: rgba(15, 23, 42, 0.9);
-            padding: 40px;
-            border-radius: 15px;
-            border: 1px solid var(--gold);
-            backdrop-filter: blur(20px);
-            box-shadow: 0 10px 50px rgba(0,0,0,0.5);
-        }
-
-        .asset-value {
-            font-size: 3.5rem;
-            font-weight: 900;
-            margin: 10px 0;
-            color: #fff;
-        }
-
-        /* Software Logic Section */
-        .software-box {
-            background: #000;
-            padding: 25px;
-            border-radius: 10px;
-            border: 1px dashed var(--gold);
-            margin-top: 30px;
-        }
-
-        input {
-            padding: 12px;
-            border-radius: 5px;
-            border: 1px solid var(--gold);
-            background: #111;
-            color: var(--gold);
-            width: 60%;
-            font-size: 1rem;
-            margin-bottom: 10px;
-        }
-
-        .action-btn {
-            background: var(--gold);
-            color: #000;
-            padding: 12px 30px;
-            border: none;
-            border-radius: 5px;
-            font-weight: bold;
-            cursor: pointer;
-            text-transform: uppercase;
-            transition: 0.3s;
-        }
-
-        .action-btn:hover {
-            box-shadow: 0 0 20px var(--gold);
-            transform: scale(1.05);
-        }
-
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-            padding: 20px;
-        }
-
-        .card {
-            background: #0f172a;
-            padding: 25px;
-            border-radius: 5px;
-            text-align: left;
-            border-left: 4px solid var(--gold);
-        }
-
-        .card h3 { color: var(--gold); margin-top: 0; font-size: 1rem; }
-
-        .footer {
-            padding: 40px;
-            border-top: 1px solid #1e293b;
-            color: #475569;
-            font-size: 0.8rem;
-        }
+        /* Cart Section */
+        .cart-panel { background: white; padding: 20px; border-radius: 10px; height: fit-content; position: sticky; top: 80px; }
+        .cart-item { display: flex; justify-content: space-between; border-bottom: 1px solid #eee; padding: 10px 0; font-size: 0.9rem; }
+        .checkout-btn { width: 100%; background: var(--green); color: white; border: none; padding: 15px; border-radius: 5px; font-weight: bold; margin-top: 20px; cursor: pointer; }
+        
+        .dedication { font-size: 0.8rem; color: #94a3b8; margin-top: 5px; }
+        @media (max-width: 768px) { .container { grid-template-columns: 1fr; } }
     </style>
 </head>
 <body>
 
-<section class="hero">
-    <div class="quote">"Logic Rules the Globe."</div>
-    <button class="action-btn" onclick="playProclamation()" style="background: transparent; color: var(--gold); border: 2px solid var(--gold);">
-        🔊 Listen to Official Proclamation
-    </button>
-</section>
+<header>
+    <h1 style="margin:0; font-size: 1.5rem;">SALSABILAH AMIN EMPIRES</h1>
+    <div class="dedication">Dedicated to Natasha & Salsabilah | Justice & Fairness Active</div>
+</header>
 
-<div class="dashboard">
-    <h2 style="color: var(--gold); font-size: 0.8rem; letter-spacing: 3px;">SYSTEM ASSET VALUATION</h2>
-    <div class="asset-value">$ <span id="counter">0</span></div>
-    
-    <p style="color: #94a3b8; font-size: 1.1rem; font-weight: bold;">
-        Asset Identity: Dedicated to Natasha & Salsabilah
-    </p>
-
-    <div class="software-box">
-        <h3 style="color: var(--green); margin-top:0;">THE DIGIT THEORY ENGINE v3.0</h3>
-        <p style="font-size: 0.9rem; color: #ccc;">Input Value for Justice & Fairness Calculation:</p>
-        <input type="number" id="theoryInput" placeholder="Enter number...">
-        <br>
-        <button class="action-btn" onclick="runTheory()">Execute Logic</button>
-        <div id="resultDisplay" style="margin-top: 15px; font-size: 1.2rem; color: var(--gold); font-weight: bold;"></div>
+<div class="container">
+    <div>
+        <h2 style="font-size: 1.2rem;"><i class="fa fa-th-large"></i> কাস্টমার কালেকশন পোর্টাল</h2>
+        <div class="product-grid">
+            <div class="card">
+                <img src="https://cdn-icons-png.flaticon.com/512/2850/2850742.png" alt="Rice">
+                <h3>পাওয়ার চাউল (প্রিমিয়াম)</h3>
+                <p class="price">৳ ৭০.০০ /কেজি</p>
+                <button class="add-btn" onclick="addToCart('পাওয়ার চাউল', 70)">অ্যাড করুন</button>
+            </div>
+            <div class="card">
+                <img src="https://cdn-icons-png.flaticon.com/512/1261/1261163.png" alt="Oil">
+                <h3>সয়াবিন তেল (১ লিটার)</h3>
+                <p class="price">৳ ১৬০.০০</p>
+                <button class="add-btn" onclick="addToCart('সয়াবিন তেল', 160)">অ্যাড করুন</button>
+            </div>
+            <div class="card">
+                <img src="https://cdn-icons-png.flaticon.com/512/5029/5029253.png" alt="Dal">
+                <h3>মসুর ডাল (১ কেজি)</h3>
+                <p class="price">৳ ১৩০.০০</p>
+                <button class="add-btn" onclick="addToCart('মসুর ডাল', 130)">অ্যাড করুন</button>
+            </div>
+        </div>
     </div>
-</div>
 
-<div class="grid">
-    <div class="card">
-        <h3>Innovation: GDE-BD-779</h3>
-        <p style="font-size: 0.9rem;">Verified Google Developer Expert. Utilizing 'The Digit Theory' to redefine computational logic and fair data filtration.</p>
+    <div class="cart-panel">
+        <h3><i class="fa fa-shopping-cart"></i> আপনার কালেকশন</h3>
+        <div id="cartItems">
+            <p style="color: #999; text-align: center;">কোনো আইটেম নেই</p>
+        </div>
+        <hr>
+        <div style="display: flex; justify-content: space-between; font-weight: bold; font-size: 1.2rem;">
+            <span>মোট:</span>
+            <span>৳ <span id="total">0</span></span>
+        </div>
+        <button class="checkout-btn" onclick="checkout()">টাকা কালেকশন করুন</button>
     </div>
-    <div class="card">
-        <h3>Legal Entity</h3>
-        <p style="font-size: 0.9rem;">SALSABILAH AMIN EMPIRES LTD (UK No. 09814720). Strategic global scaling from Chuadanga to London.</p>
-    </div>
-</div>
-
-<div class="footer">
-    <p>© 2026 SALSABILAH AMIN EMPIRES LTD. | POWERED BY MD. AL AMIN SOHAG</p>
 </div>
 
 <script>
-    // 1. Voice Proclamation
-    function playProclamation() {
-        const text = "Welcome to the realm of Salsabilah Amin Empires. Witness the brilliance of Al Amin Sohag. This empire is dedicated to Natasha and Salsabilah. His roots are in Chuadanga, but his logic rules the global market.";
-        const msg = new SpeechSynthesisUtterance(text);
-        msg.lang = 'en-US';
-        msg.rate = 0.9;
-        window.speechSynthesis.speak(msg);
+    let cart = [];
+    let total = 0;
+
+    function addToCart(name, price) {
+        cart.push({name, price});
+        updateCart();
     }
 
-    // 2. The Digit Theory Software Logic
-    function runTheory() {
-        let input = document.getElementById('theoryInput').value;
-        if(input) {
-            // Your Logic: Justice & Fairness (Doubling the value)
-            let result = input * 2;
-            document.getElementById('resultDisplay').innerHTML = "Theory Result: " + result.toLocaleString() + " <br><span style='font-size:0.8rem; color: #34A853;'>[Justice & Fairness Applied]</span>";
-        } else {
-            alert("Sir, please enter a numeric value for the Theory.");
-        }
+    function updateCart() {
+        const cartDiv = document.getElementById('cartItems');
+        const totalSpan = document.getElementById('total');
+        cartDiv.innerHTML = "";
+        total = 0;
+
+        cart.forEach((item, index) => {
+            total += item.price;
+            cartDiv.innerHTML += `
+                <div class="cart-item">
+                    <span>${item.name}</span>
+                    <span>৳ ${item.price}</span>
+                </div>
+            `;
+        });
+
+        if(cart.length === 0) cartDiv.innerHTML = '<p style="color: #999; text-align: center;">কোনো আইটেম নেই</p>';
+        totalSpan.innerText = total;
     }
 
-    // 3. Valuation Counter
-    let count = 0;
-    const target = 125000;
-    const interval = setInterval(() => {
-        count += 2500;
-        document.getElementById('counter').innerText = Math.floor(count).toLocaleString();
-        if (count >= target) {
-            document.getElementById('counter').innerText = "125,000";
-            clearInterval(interval);
+    function checkout() {
+        if(total === 0) {
+            alert("আগে আইটেম অ্যাড করুন স্যার!");
+            return;
         }
-    }, 40);
+        alert("আলহামদুলিল্লাহ! মোট ৳" + total + " কালেকশন সফল হয়েছে।\n\nসফটওয়্যার আপডেট: ডাটাবেসে সেভ করা হচ্ছে...");
+        cart = [];
+        updateCart();
+    }
 </script>
 
 </body>
