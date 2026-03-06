@@ -1,8 +1,5 @@
-# 🛡️ Salsabilah-Empire-OS
-> **Strategic System Architecture & Global Industrial Resilience Engine**
-> *Developed by SALSABILAH AMIN EMPIRES LTD.*
-
-![UK Registered](https://img.shields.io/badge/UK_Company-09814720-gold)
+Grouputterflyealerealer 🛡️ Salsabilah-Empire-OS
+> **Strategic System Architecture & Global Industrial Resilience EngSALSABILAHeveloped by SALSABILAH AMIN EMPIRES LThttps![UK Registered](https://img.shields.io/badge/UK_Company-09814720-gold)
 ![Asset Valuation](https://img.shields.io/badge/IP_Value-%241.25M_USD-green)
 ![DW Award](https://img.shields.io/badge/DW-Rising_Star_of_Asia-orange)
 
@@ -37,11 +34,9 @@
 
 ---
 
-## 🏬 Authorized Dealer Network
-* **MyOne Electronics** | **Minister Group** | **Butterfly Group**
-
-## 📍 Contact & Headquarters
-**SR Electronics Park** (Regional HQ)  
+## 🏬 Authorized DeaHeadquarters
+* **MyOne Electronics** | *** | **Butterfly GroHeadqhttps://ministerbd.com/arterssContact & Headquartershttps://myonebd.com/product/myone-my-2e6g-colorful-light-black-match/
+**SR Electronics Park** (Regional HQ2nd https://www.butterflygroupbd.com/?srsltid=AfmBOorJJznjMucXl9ZnTIs-qQT7jVgXKr-fJQbxnGheJz0CpTy-L7Gf
 Shah Super Market, 2nd Floor, Hatboalia, Chuadanga, Bangladesh.  
 **WhatsApp:** +8801711995940 | **Web:** [salsabilah.com](http://salsabilah.com)
 
