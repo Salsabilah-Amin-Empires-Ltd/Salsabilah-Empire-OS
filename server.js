@@ -10,4 +10,3 @@ app.use('/api', require('./routes/api'));
 app.listen(PORT, () => {
     console.log(`Salsabilah Empire OS is running on port ${PORT}`);
 });
-
