@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MD. AL AMIN SOHAG | Salsabilah Amin Empires</title>
-    
     <style>
         :root {
             --gold: #D4AF37;
@@ -25,6 +24,14 @@
             padding: 60px 20px;
             background: radial-gradient(circle, #1e293b 0%, #020617 100%);
             border-bottom: 3px solid var(--gold);
+        }
+
+        .quote {
+            font-size: 2rem;
+            color: var(--gold);
+            letter-spacing: 2px;
+            font-weight: bold;
+            margin-bottom: 20px;
         }
 
         .dashboard {
@@ -71,25 +78,45 @@
             cursor: pointer;
             text-transform: uppercase;
             border-radius: 4px;
+            margin: 10px;
         }
 
+        .grid {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            max-width: 850px;
+            margin: 0 auto 40px;
+        }
+
+        .card {
+            background: rgba(30, 41, 59, 0.5);
+            padding: 20px;
+            border-radius: 5px;
+            text-align: left;
+            border-left: 4px solid var(--gold);
+            flex: 1;
+        }
+
+        .card h3 { color: var(--gold); margin-top: 0; font-size: 1rem; }
+
         .footer {
-            padding: 30px;
-            font-size: 0.8rem;
-            color: #64748b;
+            padding: 40px;
             border-top: 1px solid #1e293b;
+            color: #475569;
+            font-size: 0.8rem;
         }
     </style>
 </head>
 <body>
 
 <section class="hero">
-    <h1 style="color: var(--gold); letter-spacing: 2px;">LOGIC RULES THE GLOBE</h1>
+    <div class="quote">"LOGIC RULES THE GLOBE"</div>
     <button class="action-btn" onclick="playProclamation()">🔊 Voice Announcement</button>
 </section>
 
 <div class="dashboard">
-    <h3 style="color: var(--gold); font-size: 0.7rem; letter-spacing: 4px;">SYSTEM ASSET VALUATION</h3>
+    <h3 style="color: var(--gold); font-size: 0.8rem; letter-spacing: 4px;">SYSTEM ASSET VALUATION</h3>
     <div class="asset-value">$ <span id="counter">0</span></div>
     
     <p style="font-weight: bold; color: #cbd5e1;">
@@ -104,6 +131,51 @@
         <div id="resultDisplay" style="margin-top: 15px; font-weight: bold; color: var(--gold);"></div>
     </div>
 </div>
+
+<div class="grid">
+    <div class="card">
+        <h3>Vision & Innovation</h3>
+        <p style="font-size: 0.9rem;">Utilizing 'The Digit Theory' for redefining computational fairness and global data filtration.</p>
+    </div>
+    <div class="card">
+        <h3>Empire Scale</h3>
+        <p style="font-size: 0.9rem;">Strategic growth through Salsabilah-Empire-OS Engine, bridging Chuadanga to the world.</p>
+    </div>
+</div>
+
+<div class="footer">
+    <p>© 2026 SALSABILAH AMIN EMPIRES LTD. | POWERED BY MD. AL AMIN SOHAG</p>
+</div>
+
+<script>
+    function playProclamation() {
+        const text = "Official announcement from MD. AL AMIN SOHAG. Welcome to Salsabilah Amin Empires. My logic, the Digit Theory, rules the global market.";
+        const msg = new SpeechSynthesisUtterance(text);
+        msg.rate = 0.9;
+        window.speechSynthesis.speak(msg);
+    }
+
+    function runTheory() {
+        const input = document.getElementById('theoryInput').value;
+        if(input) {
+            const result = input * 2.5; // Justice Multiplier
+            document.getElementById('resultDisplay').innerHTML = "Theory Result: " + result.toLocaleString() + " [Justice Applied]";
+        }
+    }
+
+    let count = 0;
+    const interval = setInterval(() => {
+        count += 2500;
+        document.getElementById('counter').innerText = count.toLocaleString();
+        if (count >= 125000) {
+            document.getElementById('counter').innerText = "125,000";
+            clearInterval(interval);
+        }
+    }, 40);
+</script>
+
+</body>
+</html>
 
 <div class="footer">
     <p>© 2026 SALSABILAH AMIN EMPIRES LTD. | POWERED BY MD. AL AMIN SOHAG</p>
