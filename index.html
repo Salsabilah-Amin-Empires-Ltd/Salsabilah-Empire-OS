@@ -27,6 +27,8 @@
             border-bottom: 3px solid var(--gold);
         }
 
+        .quote { font-size: 1.5rem; margin-bottom: 20px; font-style: italic; color: var(--gold); }
+
         .dashboard {
             max-width: 850px;
             margin: -30px auto 40px;
@@ -37,120 +39,19 @@
             box-shadow: 0 10px 40px rgba(0,0,0,0.7);
         }
 
-        .asset-value {
-            font-size: 3.5rem;
-            font-weight: 900;
-            color: #fff;
-            text-shadow: 0 0 15px var(--gold);
-        }
+        .asset-value { font-size: 3.5rem; font-weight: 900; color: #fff; text-shadow: 0 0 15px var(--gold); margin: 20px 0; }
 
-        .software-box {
-            background: #000;
-            padding: 20px;
-            border-radius: 8px;
-            border: 1px dashed var(--gold);
-            margin-top: 25px;
-        }
+        .software-box { background: #000; padding: 20px; border-radius: 8px; border: 1px dashed var(--gold); margin-top: 25px; }
 
-        input {
-            padding: 12px;
-            border: 1px solid var(--gold);
-            background: #111;
-            color: var(--gold);
-            width: 70%;
-            margin-bottom: 15px;
-            border-radius: 4px;
-        }
+        input { padding: 12px; border: 1px solid var(--gold); background: #111; color: var(--gold); width: 70%; margin-bottom: 15px; border-radius: 4px; }
 
-        .action-btn {
-            background: var(--gold);
-            color: #000;
-            padding: 12px 35px;
-            border: none;
-            font-weight: bold;
-            cursor: pointer;
-            text-transform: uppercase;
-            border-radius: 4px;
-        }
+        .action-btn { background: var(--gold); color: #000; padding: 12px 35px; border: none; font-weight: bold; cursor: pointer; text-transform: uppercase; border-radius: 4px; margin: 5px; }
 
-        .footer {
-            padding: 30px;
-            font-size: 0.8rem;
-            color: #64748b;
-            border-top: 1px solid #1e293b;
-        }
-    </style>
-</head>
-<body>
+        .grid { display: flex; gap: 20px; max-width: 850px; margin: 0 auto 40px; padding: 0 20px; }
 
-<section class="hero">
-    <h1 style="color: var(--gold); letter-spacing: 2px;">LOGIC RULES THE GLOBE</h1>
-    <button class="action-btn" onclick="playProclamation()">🔊 Voice Announcement</button>
-</section>
+        .card { background: #1e293b; padding: 20px; border-radius: 5px; text-align: left; border-left: 4px solid var(--gold); flex: 1; }
 
-<div class="dashboard">
-    <h3 style="color: var(--gold); font-size: 0.7rem; letter-spacing: 4px;">SYSTEM ASSET VALUATION</h3>
-    <div class="asset-value">$ <span id="counter">0</span></div>
-    
-    <p style="font-weight: bold; color: #cbd5e1;">
-        Founder: MD. AL AMIN SOHAG | Salsabilah Amin Empires LTD 👑
-    </p>
-
-    <div class="software-box">
-        <h4 style="color: var(--green); margin: 0 0 10px;">THE DIGIT THEORY ENGINE v3.0</h4>
-        <input type="number" id="theoryInput" placeholder="Enter data for Justice calculation...">
-        <br>
-        <button class="action-btn" onclick="runTheory()">Execute Engine</button>
-        <div id="resultDisplay" style="margin-top: 15px; font-weight: bold; color: var(--gold);"></div>
-    </div>
-</div>
-
-<div class="footer">
-    <p>© 2026 SALSABILAH AMIN EMPIRES LTD. | POWERED BY MD. AL AMIN SOHAG</p>
-</div>
-
-<script>
-    function playProclamation() {
-        const text = "Official announcement from MD. AL AMIN SOHAG. Welcome to Salsabilah Amin Empires. My logic, the Digit Theory, rules the global market.";
-        const msg = new SpeechSynthesisUtterance(text);
-        msg.rate = 0.9;
-        window.speechSynthesis.speak(msg);
-    }
-
-    function runTheory() {
-        const input = document.getElementById('theoryInput').value;
-        if(input) {
-            const result = input * 2.5; // Justice Multiplier
-            document.getElementById('resultDisplay').innerHTML = "Theory Result: " + result.toLocaleString() + " [Justice Applied]";
-        }
-    }
-
-    let count = 0;
-    const interval = setInterval(() => {
-        count += 2500;
-        document.getElementById('counter').innerText = count.toLocaleString();
-        if (count >= 125000) {
-            document.getElementById('counter').innerText = "125,000";
-            clearInterval(interval);
-        }
-    }, 40);
-</script>
-
-</body>
-</html>
-            border-radius: 5px;
-            text-align: left;
-            border-left: 4px solid var(--gold);
-        }
-
-        .card h3 { color: var(--gold); margin-top: 0; font-size: 1rem; }
-
-        .footer {
-            padding: 40px;
-            border-top: 1px solid #1e293b;
-            color: #475569;
-            font-size: 0.8rem;
-        }
+        .footer { padding: 40px; border-top: 1px solid #1e293b; color: #475569; font-size: 0.8rem; }
     </style>
 </head>
 <body>
@@ -172,7 +73,6 @@
 
     <div class="software-box">
         <h3 style="color: var(--green); margin-top:0;">THE DIGIT THEORY ENGINE v3.0</h3>
-        <p style="font-size: 0.9rem; color: #ccc;">Input Value for Justice & Fairness Calculation:</p>
         <input type="number" id="theoryInput" placeholder="Enter number...">
         <br>
         <button class="action-btn" onclick="runTheory()">Execute Logic</button>
@@ -183,11 +83,11 @@
 <div class="grid">
     <div class="card">
         <h3>Vision & Innovation</h3>
-        <p style="font-size: 0.9rem;">Utilizing 'The Digit Theory' for redefining computational fairness and global data filtration. Expert in backend architecture.</p>
+        <p style="font-size: 0.9rem;">Utilizing 'The Digit Theory' for redefining computational fairness and global data filtration.</p>
     </div>
     <div class="card">
         <h3>Empire Scale</h3>
-        <p style="font-size: 0.9rem;">Bridging the digital gap from Chuadanga to London. Strategic growth through Salsabilah-Empire-OS Engine.</p>
+        <p style="font-size: 0.9rem;">Bridging the digital gap from Chuadanga to London. Strategic growth through Salsabilah-Empire-OS.</p>
     </div>
 </div>
 
@@ -207,7 +107,6 @@
     function runTheory() {
         let input = document.getElementById('theoryInput').value;
         if(input) {
-            // Digit Theory Implementation
             let result = input * 2.5; 
             document.getElementById('resultDisplay').innerHTML = "Theory Output: " + result.toLocaleString() + " <br><span style='font-size:0.8rem; color: #34A853;'>[System Justice Multiplier Applied]</span>";
         } else {
@@ -226,6 +125,5 @@
         }
     }, 40);
 </script>
-
 </body>
 </html>
